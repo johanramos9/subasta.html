@@ -68,7 +68,7 @@
   --color-gray-2: #f5f8fa;
   --color-subtitle: #f9004d;
   --background-color-1: #24243557;
-  --background-color-2: #1b1b1b;
+  --background-color-2: #251e2c;
   --background-color-3: #151521;
   --background-color-4: #242435;
   --gradient-one: linear-gradient(to right bottom, #2899d8, #00a3ff);
@@ -205,13 +205,13 @@ hr {
   margin-bottom: 20px;
 }
 
-h1,
+
 h2,
 h3,
 h4,
 h5,
 h6,
-.h1,
+
 .h2,
 .h3,
 .h4,
@@ -287,13 +287,13 @@ h6 a,
 .bg-color-tertiary .h4,
 .bg-color-tertiary .h5,
 .bg-color-tertiary .h6 {
-  color: #fff;
+  color: rgb(231, 231, 231);
 }
 .bg-color-tertiary p {
-  color: #6c7279;
+  color: #ffffff;
 }
 .bg-color-tertiary a {
-  color: #6c7279;
+  color: #ffffff;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -17593,9 +17593,7 @@ button .small-image {
   border-radius: 10px;
   z-index: -1;
 }
-.product-style-one:hover::before {
-  transform: rotate(2deg) translateX(-7px) translateY(11px);
-}
+
 .product-style-one.with-placeBid .card-thumbnail {
   position: relative;
 }
