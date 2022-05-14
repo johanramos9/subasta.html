@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PUSH!</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="theme-style-mode" content="0"> 
+
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/nice-select.css">
+    <link rel="stylesheet" href="assets/css/plugins/feature.css">
+    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/odometer.css">
+
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <div class="container">
+        <div class="row">
+          <div class="col-xl-10">
+            <img class="navbar-brand btn" href="./index.html" src="./img/LOGO.png" width="300" alt="logo">
+          </div>
+          <div class="col-xl-2 d-flex justify-content-center">
+            <div class="dropdown text-end">
+                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <hr>
+                  <img src="https://github.com/mdo.png" alt="mdo" width="60" height="60" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                  <li><a class="dropdown-item" href="#">New project...</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: black;">
+        <header class="d-flex justify-content-center py-2">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="./index.html" class="nav-link" style="color: white;">Home</a></li>
+            <li class="nav-item"><a href="./vehiculos.html" class="nav-link" style="color: white;">Vehiculos</a></li>
+            <li class="nav-item"><a href="./Tecnologia.html" class="nav-link active" aria-current="page" style="background-color: #00a3ff;">Tecnologia</a></li>
+            <li class="nav-item"><a href="./vender.html" class="nav-link" style="color: white;">¿Como Vender?</a></li>
+            <li class="nav-item"><a href="./support.html" class="nav-link" style="color: white;">FAQs</a></li>
+            <li class="nav-item"><a href="./contacto.html" class="nav-link" style="color: white;">Contacto</a></li>
+          </ul>
+        </header>
+    </div>
+</head>
+
+<body>
+    
+
+
+     <div class="explore-area rn-section-gapTop">
+        <div class="container">
+            <div class="row mb--40">
+                <div class="col-12">
+                    <h3 class="title">Tecnologia</h3>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-3 order-2 order-lg-1">
+                    <div class="nu-course-sidebar">
+
+                        <!-- Start Widget Wrapper  -->
+                        <div class="nuron-expo-filter-widget widget-shortby">
+                            <div class="inner">
+                                <h5 class="widget-title">Ordenados por:</h5>
+                                <div class="content">
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="short-check1">
+                                        <label for="short-check1">Mas Nuevos</label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="short-check2">
+                                        <label for="short-check2">Mas Antiguos</label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="short-check3">
+                                        <label for="short-check3">Populares</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nuron-expo-filter-widget widget-category mt--30">
+                            <div class="inner">
+                                <h5 class="widget-title">Categorias</h5>
+                                <div class="content">
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="cat-check1">
+                                        <label for="cat-check1">Smartphones<span>(24)</span></label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="cat-check2">
+                                        <label for="cat-check2">Notebooks<span>(12)</span></label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="cat-check3">
+                                        <label for="cat-check3">Tablets<span>(8)</span></label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="cat-check4">
+                                        <label for="cat-check4">Piezas PC<span>(6)</span></label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="cat-check4">
+                                        <label for="cat-check4">Otross<span>(3)</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="nuron-expo-filter-widget widget-shortby mt--30">
+                            <div class="inner">
+                                <h5 class="widget-title">Precios</h5>
+                                <div class="content">
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="price-check1">
+                                        <label for="price-check1">Mas bajo a mas alto</label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="price-check2">
+                                        <label for="price-check2">Mas alto a mas bajo</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nuron-expo-filter-widget widget-shortby mt--30">
+                            <div class="inner">
+                                <h5 class="widget-title">Filtro por precio</h5>
+                                <div class="content">
+                                    <div class="price_filter s-filter clear">
+                                        <form action="#" method="GET">
+                                            <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                                                <div class="ui-slider-range ui-widget-header ui-corner-all"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
+                                            </div>
+                                            <div class="slider__range--output">
+                                                <div class="price__output--wrap">
+                                                    <div class="price--output">
+                                                        <span>Precio :</span><input type="text" id="amount" readonly="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+                    <div class="col-lg-9 order-1 order-lg-2">
+                        <div class="row g-5">
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/nissan.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.500.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/celu.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.400.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/libros1.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.300.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/libros2.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.200.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/mac.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.100.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/nissan.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.000.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/celu.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.600.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/libros1.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.600.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/libros2.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.600.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/mac.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.600.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/nissan.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.600.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/celu.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.600.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/libros1.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.600.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/libros2.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.600.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/mac.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.600.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/nissan.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.600.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/celu.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.600.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/libros1.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.600.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/libros2.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.600.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/mac.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.600.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6 col-sm-12">
+                                <div class="product-style-one no-overlay with-placeBid">
+                                    <div class="card-thumbnail">
+                                        <a href="product-details.html">
+                                            <img src="./img/mac.png" alt="...">
+                                        </a>
+                                        <a href="product-details.html" class="btn btn-primary">PUSH!</a>
+                                    </div>
+                                    <hr>
+                                    <a href="product-details.html"><span class="product-name">Nissan v16</span></a>
+                                    <span class="latest-bid">Ultimo PUSH!</span>
+                                    <div class="bid-react-area">
+                                        <div class="last-bid">1.600.000 CLP</div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                       
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">&copy; 2022 PUSH!</p>
+      
+          <a href="./index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img class="navbar-brand btn" href="./index.html" src="./img/LOGO.png" width="150" alt="logo">
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="./index.html"  class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="./vehiculos.html"  class="nav-link px-2 text-muted">Vehiculos</a></li>
+            <li class="nav-item"><a href="./Tecnologia.html"  class="nav-link px-2 text-muted">Tecnologia</a></li>
+            <li class="nav-item"><a href="./vender.html"  class="nav-link px-2 text-muted">¿Como Vender?</a></li>
+            <li class="nav-item"><a href="./support.html"  class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="./contacto.html"  class="nav-link px-2 text-muted">Contacto</a></li>
+          </ul>
+        </footer>
+    </div>
+
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+    <script src="assets/js/vendor/jquery-ui.js"></script>
+    <script src="assets/js/vendor/modernizer.min.js"></script>
+    <script src="assets/js/vendor/feather.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/sal.min.js"></script>
+    <script src="assets/js/vendor/particles.js"></script>
+    <script src="assets/js/vendor/jquery.style.swicher.js"></script>
+    <script src="assets/js/vendor/js.cookie.js"></script>
+    <script src="assets/js/vendor/count-down.js"></script>
+    <script src="assets/js/vendor/isotop.js"></script>
+    <script src="assets/js/vendor/imageloaded.js"></script>
+    <script src="assets/js/vendor/backtoTop.js"></script>
+    <script src="assets/js/vendor/odometer.js"></script>
+    <script src="assets/js/vendor/jquery-appear.js"></script>
+    <script src="assets/js/vendor/scrolltrigger.js"></script>
+    <script src="assets/js/vendor/jquery.custom-file-input.js"></script>
+    <script src="assets/js/vendor/savePopup.js"></script>
+    <script src="assets/js/vendor/vanilla.tilt.js"></script>
+
+    <!-- main JS -->
+    <script src="assets/js/main.js"></script>
+    <!-- Meta Mask  -->
+    <script src="assets/js/vendor/web3.min.js"></script>
+    <script src="assets/js/vendor/maralis.js"></script>
+    <script src="assets/js/vendor/nft.js"></script>
+
+</body>
+
+</html>
