@@ -28,42 +28,39 @@
 
     <div class="container">
         <div class="row">
-          <div class="col-md-12 d-flex justify-content-center">
+          <div class="col-xl-10">
             <img class="navbar-brand btn" href="./index.html" src="./img/LOGO.png" width="300" alt="logo">
+          </div>
+          <div class="col-xl-2 d-flex justify-content-center">
+            <div class="dropdown text-end">
+                <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <hr>
+                  <img src="https://github.com/mdo.png" alt="mdo" width="60" height="60" class="rounded-circle">
+                </a>
+                <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                  <li><a class="dropdown-item" href="#">New project...</a></li>
+                  <li><a class="dropdown-item" href="#">Settings</a></li>
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sign out</a></li>
+                </ul>
+              </div>
           </div>
         </div>
     </div>
 
-    <div class="container-fluid" style="background-color: rgb(0, 0, 0);">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="./index.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">Home</a></li>
-            <li><a href="./vehiculos.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">Vehiculos</a></li>
-            <li><a href="./Tecnologia.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">Tecnologia</a></li>
-            <li><a href="./comofunca.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">¿Como funciona?</a></li>
-            <li><a href="./venderr.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">¿Quieres vender?</a></li>
-            <li><a href="./contactox" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">Contacto</a></li>
+    <div class="container-fluid" style="background-color: black;">
+        <header class="d-flex justify-content-center py-2">
+          <ul class="nav nav-pills">
+            <li class="nav-item"><a href="./index.html" class="nav-link active" aria-current="page" style="background-color: #00a3ff;">Home</a></li>
+            <li class="nav-item"><a href="./vehiculos.html" class="nav-link" style="color: white;">Vehiculos</a></li>
+            <li class="nav-item"><a href="./Tecnologia.html" class="nav-link" style="color: white;">Tecnologia</a></li>
+            <li class="nav-item"><a href="./vender.html" class="nav-link" style="color: white;">¿Como Vender?</a></li>
+            <li class="nav-item"><a href="./support.html" class="nav-link" style="color: white;">FAQs</a></li>
+            <li class="nav-item"><a href="./contacto.html" class="nav-link" style="color: white;">Contacto</a></li>
           </ul>
-  
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-            <input type="search" class="form-control" placeholder="Buscar..." aria-label="Search">
-          </form>
-  
-          <div class="dropdown text-end">
-            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="./img/user.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
-            </a>
-            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-              <li><a class="dropdown-item" href="#">New project...</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
+        </header>
+    </div>
 
       <!-- Inicio script web service-->
     <script type="text/javascript">
@@ -114,7 +111,7 @@
             <script type="text/javascript">
                 $(document).ready(function(){
 
-                        $.get("https://mindicador.cl/api/bitcoin/12-05-2022", 
+                        $.get("https://mindicador.cl/api/bitcoin/13-05-2022", 
                             function(data){
                                 $.each(data.serie, function(i, item){
                                         $("#categorias5").append("<tr><td>$ "+item.valor+"</td></tr>");
@@ -126,7 +123,7 @@
             <script type="text/javascript">
                 $(document).ready(function(){
 
-                        $.get("https://mindicador.cl/api/ipc/01-04-2022", 
+                        $.get("https://mindicador.cl/api/ipc/13-05-2022", 
                             function(data){
                                 $.each(data.serie, function(i, item){
                                         $("#categorias6").append("<tr><td>% "+item.valor+"</td></tr>");
@@ -964,6 +961,25 @@
 
             </div>
         </div>
+    </div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <p class="col-md-4 mb-0 text-muted">&copy; 2022 PUSH!</p>
+      
+          <a href="./index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+            <img class="navbar-brand btn" href="./index.html" src="./img/LOGO.png" width="150" alt="logo">
+          </a>
+      
+          <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item"><a href="./index.html"  class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="./vehiculos.html"  class="nav-link px-2 text-muted">Vehiculos</a></li>
+            <li class="nav-item"><a href="./Tecnologia.html"  class="nav-link px-2 text-muted">Tecnologia</a></li>
+            <li class="nav-item"><a href="./vender.html"  class="nav-link px-2 text-muted">¿Como Vender?</a></li>
+            <li class="nav-item"><a href="./support.html"  class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="./contacto.html"  class="nav-link px-2 text-muted">Contacto</a></li>
+          </ul>
+        </footer>
     </div>
 
 

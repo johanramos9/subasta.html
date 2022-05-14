@@ -5,55 +5,201 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PUSH!</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <meta name="theme-style-mode" content="0">
+
+    <link rel="stylesheet" href="./assets/css/stylo.css">
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/nice-select.css">
+    <link rel="stylesheet" href="assets/css/plugins/feature.css">
+    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/odometer.css">
+    <link rel="stylesheet" href="./assets/css/headers.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
     
     <div class="container">
       <div class="row">
-        <div class="col-md-12 d-flex justify-content-center">
-          <img class="navbar-brand btn" href="./IndexFinal.html" src="./img/LOGO.png" width="300" alt="logo" >
+        <div class="col-xl-10">
+          <img class="navbar-brand btn" href="./index.html" src="./img/LOGO.png" width="300" alt="logo">
         </div>
-      </div>
-    </div>
-    
-	
-	
-     <div class="container-fluid" style="background-color: rgb(0, 0, 0);">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="./IndexFinal.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">Home</a></li>
-            <li><a href="./vehiculos.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">Vehiculos</a></li>
-            <li><a href="./Tecnologia.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">Tecnologia</a></li>
-            <li><a href="./comofunca.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">¿Como funciona?</a></li>
-            <li><a href="./vender.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">¿Quieres vender?</a></li>
-            <li><a href="./contacto.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">Contacto</a></li>
-          </ul>
-  
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-            <input type="search" class="form-control" placeholder="Buscar..." aria-label="Search">
-          </form>
-  
+        <div class="col-xl-2 d-flex justify-content-center">
           <div class="dropdown text-end">
-            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
-              <img src="./img/user.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
-            </a>
-            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
-              <li><a class="dropdown-item" href="#">New project...</a></li>
-              <li><a class="dropdown-item" href="#">Settings</a></li>
-              <li><a class="dropdown-item" href="#">Profile</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Sign out</a></li>
-            </ul>
-          </div>
+              <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                  <hr>
+                <img src="https://github.com/mdo.png" alt="mdo" width="60" height="60" class="rounded-circle">
+              </a>
+              <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+                <li><a class="dropdown-item" href="#">New project...</a></li>
+                <li><a class="dropdown-item" href="#">Settings</a></li>
+                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Sign out</a></li>
+              </ul>
+            </div>
         </div>
       </div>
+  </div>
+
+  <div class="container-fluid" style="background-color: black;">
+      <header class="d-flex justify-content-center py-2">
+        <ul class="nav nav-pills">
+          <li class="nav-item"><a href="./index.html" class="nav-link" style="color: white;">Home</a></li>
+          <li class="nav-item"><a href="./vehiculos.html" class="nav-link" style="color: white;">Vehiculos</a></li>
+          <li class="nav-item"><a href="./Tecnologia.html" class="nav-link" style="color: white;">Tecnologia</a></li>
+          <li class="nav-item"><a href="./vender.html" class="nav-link" style="color: white;">¿Como Vender?</a></li>
+          <li class="nav-item"><a href="./support.html" class="nav-link" style="color: white;">FAQs</a></li>
+          <li class="nav-item"><a href="./contacto.html" class="nav-link active" aria-current="page" style="background-color: #00a3ff;">Contacto</a></li>
+        </ul>
+      </header>
+  </div>
 </head>
 <body>
 
 
-<!-- INGRESAR FORMULARIO AQUI -->
-    
+<!-- MAIN -->
+<main>
+  <!-- FORMULARIO -->
+  <form action="#" class="formulario" id="formulario">
+      <!-- GRUPO DE USUARIO -->
+      <div class="formulario__grupo" id="grupo__usuario">
+          <label class="formulario__label">Nombre de usuario</label>
+          <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="usuario" id="usuario" placeholder="EJ: johan_9">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El usuario debe tener minimo 4 caracteres y solo se admiten números, letras y guión bajo.</p>
+      </div>
 
+      
+      <!-- GRUPO DE NOMBRE-->
+      <div class="formulario__grupo" id="grupo__nombre">
+          <label class="formulario__label">Nombre y Apellido</label>
+          <div class="formulario__grupo-input">
+              <input type="text" class="formulario__input" name="nombre" id="nombre" placeholder="EJ: usuario ramos">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El nombre debe tener minimo 4 caracteres y solo se admiten números, letras y guión bajo.</p>
+      </div>
+
+
+      <!-- GRUPO DE CONTRASEÑA 1-->
+      <div class="formulario__grupo" id="grupo__password">
+          <label class="formulario__label">Contraseña</label>
+          <div class="formulario__grupo-input">
+              <input type="password" class="formulario__input" name="password" id="password">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">La contraseña debe ser de 4 a 12 digitos</p>
+      </div>
+
+
+      <!-- GRUPO DE CONTRASEÑA 2-->
+      <div class="formulario__grupo" id="grupo__password2">
+          <label class="formulario__label">Repetir la contraseña</label>
+          <div class="formulario__grupo-input">
+              <input type="password" class="formulario__input" name="password2" id="password2">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">La contraseña no coincide</p>
+      </div>
+
+
+      <!-- GRUPO DE EMAIL -->
+      <div class="formulario__grupo" id="grupo__correo">
+          <label class="formulario__label">Correo Electonico</label>
+          <div class="formulario__grupo-input">
+              <input type="email" class="formulario__input" name="correo" id="correo" placeholder="EJ: correo@correo.com">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El correo debe tener mÍnimo 4 caracteres y sólo se admiten números, letras y guión bajo.</p>
+      </div>
+
+
+      <!-- GRUPO DE TELÉFONO -->
+      <div class="formulario__grupo" id="grupo__telefono">
+          <label class="formulario__label">Teléfono</label>
+          <div class="formulario__grupo-input">
+              <input type="telefono" class="formulario__input" name="telefono" id="telefono" placeholder="EJ: 0123456789">
+              <i class="formulario__validacion-estado fas fa-times-circle"></i>
+          </div>
+          <p class="formulario__input-error">El número debe tener 10 digitos</p>
+      </div>
+
+
+      <!-- GRUPO TERMINOS Y CONDICIONES -->
+      <div class="formulario__grupo formulario__grupo-terminos" id="grupo__terminos">
+          <label class="formulario__label">
+              <input class="formulario__checkbox" type="checkbox" name="terminos" id="terminos">
+              <b class="formulario__span">Acepto los terminos y condiciones</b>
+          </label>
+      </div>
+      
+      <!-- MENSAJE DE CAMPOS REQUERIDOS -->
+      <div class="formulario__mensaje" id="formulario__mensaje">
+          <p><i class="fas fa-exclamation-circle"> <b>Error:</b> Debes completar todos los campos</i></p>
+      </div>
+
+
+      <!-- GRUPO ENVIAR -->
+      <div class="formulario__grupo formulario__grupo-btn-enviar">
+          <p class="formulario__mensaje-exito" id="formulario__mensaje-exito">El formulario se envió correctamente</p>
+          <input class="formulario__btn" type="submit" value="Enviar">
+      </div>
+  </form>
+</main>
+
+<div class="container">
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+    <p class="col-md-4 mb-0 text-muted">&copy; 2022 PUSH!</p>
+
+    <a href="./index.html" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+      <img class="navbar-brand btn" href="./index.html" src="./img/LOGO.png" width="150" alt="logo">
+    </a>
+
+    <ul class="nav col-md-4 justify-content-end">
+      <li class="nav-item"><a href="./index.html"  class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="./vehiculos.html"  class="nav-link px-2 text-muted">Vehiculos</a></li>
+      <li class="nav-item"><a href="./Tecnologia.html"  class="nav-link px-2 text-muted">Tecnologia</a></li>
+      <li class="nav-item"><a href="./vender.html"  class="nav-link px-2 text-muted">¿Como Vender?</a></li>
+      <li class="nav-item"><a href="./support.html"  class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="./contacto.html"  class="nav-link px-2 text-muted">Contacto</a></li>
+    </ul>
+  </footer>
+</div>
+
+<script src="assets/js/vendor/jquery.js"></script>
+<script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+<script src="assets/js/vendor/jquery-ui.js"></script>
+<script src="assets/js/vendor/modernizer.min.js"></script>
+<script src="assets/js/vendor/feather.min.js"></script>
+<script src="assets/js/vendor/slick.min.js"></script>
+<script src="assets/js/vendor/bootstrap.min.js"></script>
+<script src="assets/js/vendor/sal.min.js"></script>
+<script src="assets/js/vendor/particles.js"></script>
+<script src="assets/js/vendor/jquery.style.swicher.js"></script>
+<script src="assets/js/vendor/js.cookie.js"></script>
+<script src="assets/js/vendor/count-down.js"></script>
+<script src="assets/js/vendor/isotop.js"></script>
+<script src="assets/js/vendor/imageloaded.js"></script>
+<script src="assets/js/vendor/backtoTop.js"></script>
+<script src="assets/js/vendor/odometer.js"></script>
+<script src="assets/js/vendor/jquery-appear.js"></script>
+<script src="assets/js/vendor/scrolltrigger.js"></script>
+<script src="assets/js/vendor/jquery.custom-file-input.js"></script>
+<script src="assets/js/vendor/savePopup.js"></script>
+<script src="assets/js/vendor/vanilla.tilt.js"></script>
+
+
+<script src="assets/js/main.js"></script>
+
+<script src="assets/js/vendor/web3.min.js"></script>
+<script src="assets/js/vendor/maralis.js"></script>
+<script src="assets/js/vendor/nft.js"></script>
+<script src="./js/me.js"></script>
+<script src="https://kit.fontawesome.com/73f851add2.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
