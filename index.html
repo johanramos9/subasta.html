@@ -68,7 +68,7 @@
       <!-- Inicio script web service-->
     <script type="text/javascript">
         $(document).ready(function(){
-                $.get("https://mindicador.cl/api/uf/11-05-2022", 
+                $.get("https://mindicador.cl/api/uf/13-05-2022", 
                     function(data){
                         $.each(data.serie, function(i, item){
                              $("#categorias").append("<tr><td>"+item.valor+"</td></tr>");
@@ -78,7 +78,7 @@
     </script>
         <script type="text/javascript">
             $(document).ready(function(){
-                    $.get("https://mindicador.cl/api/dolar/12-05-2022", 
+                    $.get("https://mindicador.cl/api/dolar/13-05-2022", 
                         function(data){
                             $.each(data.serie, function(i, item){
                                  $("#categorias2").append("<tr><td>"+item.valor+"</td></tr>");
@@ -90,7 +90,7 @@
             <script type="text/javascript">
                 $(document).ready(function(){
 
-                        $.get("https://mindicador.cl/api/utm/12-05-2022", 
+                        $.get("https://mindicador.cl/api/utm/13-05-2022", 
                             function(data){
                                 $.each(data.serie, function(i, item){
                                      $("#categorias3").append("<tr><td>"+item.valor+"</td></tr>");
@@ -99,6 +99,44 @@
 
                });
             </script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+
+                        $.get("https://mindicador.cl/api/euro/13-05-2022", 
+                            function(data){
+                                $.each(data.serie, function(i, item){
+                                        $("#categorias4").append("<tr><td>"+item.valor+"</td></tr>");
+                            });
+                        });
+
+                });
+            </script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+
+                        $.get("https://mindicador.cl/api/bitcoin/12-05-2022", 
+                            function(data){
+                                $.each(data.serie, function(i, item){
+                                        $("#categorias5").append("<tr><td>"+item.valor+"</td></tr>");
+                            });
+                        });
+
+                });
+            </script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+
+                        $.get("https://mindicador.cl/api/ipc/01-04-2022", 
+                            function(data){
+                                $.each(data.serie, function(i, item){
+                                        $("#categorias6").append("<tr><td>"+item.valor+"</td></tr>");
+                            });
+                        });
+
+                });
+            </script>
+                    
+                    
 
     <!-- Fin script web service-->
 </head>
@@ -162,9 +200,9 @@
                 <div class="row g-5">
                     <!-- start single category -->
                     <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
-                        <a class="category-style-one" href="#">
+                        <a class="category-style-one">
                             <div class="row0">
-                                <h6>Valor UF</h6>
+                                <h6>UF</h6>
                             </div>
                             <div class="row0">
                                 <table class="table" id="categorias" style="color: rgb(0, 0, 0)">
@@ -182,9 +220,9 @@
                     <!-- end single category -->
                     <!-- start single category -->
                     <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
-                        <a class="category-style-one" href="#">
+                        <a class="category-style-one">
                             <div class="row3">
-                                <h6>Valor Dolar</h6>
+                                <h6>Dolar</h6>
                             </div>
                             <div class="row3">
                                 <table class="table" id="categorias2" style="color: rgb(0, 0, 0)">
@@ -202,7 +240,7 @@
                     <!-- start single category -->
                     <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6" data-sal-delay="400" data-sal="slide-up" data-sal-duration="800">
                         <a class="category-style-one">
-                            <h6>Valor UTM</h6>
+                            <h6>UTM</h6>
                             <div class="row3">
                                 <table class="table" id="categorias3">
                                     <thead>
@@ -217,10 +255,10 @@
                     <!-- end single category -->
                     <!-- start single category -->
                     <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6" data-sal-delay="500" data-sal="slide-up" data-sal-duration="800">
-                        <a class="category-style-one" href="#">
-                            <h6>Valor UTM</h6>
+                        <a class="category-style-one">
+                            <h6>Euro</h6>
                             <div class="row3">
-                                <table class="table" id="categorias3">
+                                <table class="table" id="categorias4">
                                     <thead>
                                         <tr>
                                             <th scope="col"></th>
@@ -233,10 +271,10 @@
                     <!-- end single category -->
                     <!-- start single category -->
                     <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6" data-sal-delay="600" data-sal="slide-up" data-sal-duration="800">
-                        <a class="category-style-one" href="#">
-                            <h6>Valor UTM</h6>
+                        <a class="category-style-one">
+                            <h6>Bitcoin</h6>
                             <div class="row3">
-                                <table class="table" id="categorias3">
+                                <table class="table" id="categorias5">
                                     <thead>
                                         <tr>
                                             <th scope="col"></th>
@@ -249,10 +287,10 @@
                     <!-- end single category -->
                     <!-- start single category -->
                     <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6" data-sal-delay="700" data-sal="slide-up" data-sal-duration="800">
-                        <a class="category-style-one" href="#">
-                            <h6>Valor UTM</h6>
+                        <a class="category-style-one">
+                            <h6>IPC</h6>
                             <div class="row3">
-                                <table class="table" id="categorias3">
+                                <table class="table" id="categorias6">
                                     <thead>
                                         <tr>
                                             <th scope="col"></th>
