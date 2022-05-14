@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>PUSH!</title>
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <meta name="theme-style-mode" content="1"> <!-- 0 == light, 1 == dark -->
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+    <!-- CSS 
+    ============================================ -->
+    <link rel="stylesheet" href="assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick.css">
+    <link rel="stylesheet" href="assets/css/vendor/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/vendor/nice-select.css">
+    <link rel="stylesheet" href="assets/css/plugins/feature.css">
+    <link rel="stylesheet" href="assets/css/plugins/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/odometer.css">
+
+    <!-- Style css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <div class="container">
+        <div class="row">
+          <div class="col-md-12 d-flex justify-content-center">
+            <img class="navbar-brand btn" href="./index.html" src="./img/LOGO.png" width="300" alt="logo">
+          </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: rgb(0, 0, 0);">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="./index.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">Home</a></li>
+            <li><a href="./vehiculos.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">Vehiculos</a></li>
+            <li><a href="./Tecnologia.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">Tecnologia</a></li>
+            <li><a href="./comofunca.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">¿Como funciona?</a></li>
+            <li><a href="./vender.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">¿Quieres vender?</a></li>
+            <li><a href="./contacto.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">Contacto</a></li>
+          </ul>
+  
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+            <input type="search" class="form-control" placeholder="Buscar..." aria-label="Search">
+          </form>
+  
+          <div class="dropdown text-end">
+            <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+              <img src="./img/user.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+            </a>
+            <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+              <li><a class="dropdown-item" href="#">New project...</a></li>
+              <li><a class="dropdown-item" href="#">Settings</a></li>
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Sign out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</head>
+
+<body>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/auto.png" alt="..." class="d-block w-100">
+    
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1>Nissan V16 desde $1.650.000</h1>
+                <p>El clasico de siempre ¡Nunca Taxi!</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Dale Push!</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/iphone.png" alt="..." class="d-block w-100">
+    
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>Iphone desde $500.000</h1>
+                <p>¡Casi nuevo! Tiene todos sus accesorios</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Dale Push!</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/pc.png" alt="..." class="d-block w-100">
+    
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1>Macbook Pro desde $750.000</h1>
+                <p>¡I Love Apple! Completa tu set de productos Apple con este imperdible precio</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Dale Push!</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <div class="rn-live-bidding-area rn-section-gapTop">
+        <div class="container">
+            <div class="row mb--50">
+                <div class="col-lg-12">
+                    <div class="section-title">
+                        <h3 class="title mb--0 live-bidding-title" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">Estan a punto de acabar!</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="banner-one-slick slick-activation-03 slick-arrow-style-one rn-slick-dot-style slick-gutter-15">
+                        
+                        <div class="single-slide-product">
+                            <div class="product-style-one">
+                                <div class="card-thumbnail">
+                                    <a href="product-details.html"><img src="assets/images/portfolio/portfolio-07.jpg" alt="..."></a>
+                                    <div class="countdown" data-date="2022-11-06">
+                                        <div class="countdown-container days">
+                                            <span class="countdown-value">10</span>
+                                            <span class="countdown-heading">D's</span>
+                                        </div>
+                                        <div class="countdown-container hours">
+                                            <span class="countdown-value">23</span>
+                                            <span class="countdown-heading">H's</span>
+                                        </div>
+                                        <div class="countdown-container minutes">
+                                            <span class="countdown-value">38</span>
+                                            <span class="countdown-heading">Min's</span>
+                                        </div>
+                                        <div class="countdown-container seconds">
+                                            <span class="countdown-value">27</span>
+                                            <span class="countdown-heading">Sec</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <a href="product-details.html"><span class="product-name">Nissan V16</span></a>
+                                <span class="latest-bid">Ultimo PUSH!</span>
+                                <div class="bid-react-area">
+                                    <div class="last-bid">1.600.000 CLP</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide-product">
+                            <div class="product-style-one">
+                                <div class="card-thumbnail">
+                                    <a href="product-details.html"><img src="assets/images/portfolio/portfolio-07.jpg" alt="..."></a>
+                                    <div class="countdown" data-date="2022-11-09">
+                                        <div class="countdown-container days">
+                                            <span class="countdown-value">87</span>
+                                            <span class="countdown-heading">D's</span>
+                                        </div>
+                                        <div class="countdown-container hours">
+                                            <span class="countdown-value">23</span>
+                                            <span class="countdown-heading">H's</span>
+                                        </div>
+                                        <div class="countdown-container minutes">
+                                            <span class="countdown-value">38</span>
+                                            <span class="countdown-heading">Min's</span>
+                                        </div>
+                                        <div class="countdown-container seconds">
+                                            <span class="countdown-value">27</span>
+                                            <span class="countdown-heading">Sec</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <a href="product-details.html"><span class="product-name">Nissan V16</span></a>
+                                <span class="latest-bid">Ultimo PUSH!</span>
+                                <div class="bid-react-area">
+                                    <div class="last-bid">1.600.000 CLP</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide-product">
+                            <div class="product-style-one">
+                                <div class="card-thumbnail">
+                                    <a href="product-details.html"><img src="assets/images/portfolio/portfolio-07.jpg" alt="..."></a>
+                                    <div class="countdown" data-date="2022-11-05">
+                                        <div class="countdown-container days">
+                                            <span class="countdown-value">10</span>
+                                            <span class="countdown-heading">D's</span>
+                                        </div>
+                                        <div class="countdown-container hours">
+                                            <span class="countdown-value">23</span>
+                                            <span class="countdown-heading">H's</span>
+                                        </div>
+                                        <div class="countdown-container minutes">
+                                            <span class="countdown-value">38</span>
+                                            <span class="countdown-heading">Min's</span>
+                                        </div>
+                                        <div class="countdown-container seconds">
+                                            <span class="countdown-value">27</span>
+                                            <span class="countdown-heading">Sec</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <a href="product-details.html"><span class="product-name">Nissan V16</span></a>
+                                <span class="latest-bid">Ultimo PUSH!</span>
+                                <div class="bid-react-area">
+                                    <div class="last-bid">1.600.000 CLP</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide-product">
+                            <div class="product-style-one">
+                                <div class="card-thumbnail">
+                                    <a href="product-details.html"><img src="assets/images/portfolio/portfolio-07.jpg" alt="..."></a>
+                                    <div class="countdown" data-date="2022-11-09">
+                                        <div class="countdown-container days">
+                                            <span class="countdown-value">87</span>
+                                            <span class="countdown-heading">D's</span>
+                                        </div>
+                                        <div class="countdown-container hours">
+                                            <span class="countdown-value">23</span>
+                                            <span class="countdown-heading">H's</span>
+                                        </div>
+                                        <div class="countdown-container minutes">
+                                            <span class="countdown-value">38</span>
+                                            <span class="countdown-heading">Min's</span>
+                                        </div>
+                                        <div class="countdown-container seconds">
+                                            <span class="countdown-value">27</span>
+                                            <span class="countdown-heading">Sec</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <a href="product-details.html"><span class="product-name">Nissan V16</span></a>
+                                <span class="latest-bid">Ultimo PUSH!</span>
+                                <div class="bid-react-area">
+                                    <div class="last-bid">1.600.000 CLP</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide-product">
+                            <div class="product-style-one">
+                                <div class="card-thumbnail">
+                                    <a href="product-details.html"><img src="assets/images/portfolio/portfolio-07.jpg" alt="..."></a>
+                                    <div class="countdown" data-date="2022-11-09">
+                                        <div class="countdown-container days">
+                                            <span class="countdown-value">87</span>
+                                            <span class="countdown-heading">D's</span>
+                                        </div>
+                                        <div class="countdown-container hours">
+                                            <span class="countdown-value">23</span>
+                                            <span class="countdown-heading">H's</span>
+                                        </div>
+                                        <div class="countdown-container minutes">
+                                            <span class="countdown-value">38</span>
+                                            <span class="countdown-heading">Min's</span>
+                                        </div>
+                                        <div class="countdown-container seconds">
+                                            <span class="countdown-value">27</span>
+                                            <span class="countdown-heading">Sec</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <a href="product-details.html"><span class="product-name">Nissan V16</span></a>
+                                <span class="latest-bid">Ultimo PUSH!</span>
+                                <div class="bid-react-area">
+                                    <div class="last-bid">1.600.000 CLP</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="single-slide-product">
+                            <div class="product-style-one">
+                                <div class="card-thumbnail">
+                                    <a href="product-details.html"><img src="assets/images/portfolio/portfolio-07.jpg" alt="..."></a>
+                                    <div class="countdown" data-date="2022-11-09">
+                                        <div class="countdown-container days">
+                                            <span class="countdown-value">87</span>
+                                            <span class="countdown-heading">D's</span>
+                                        </div>
+                                        <div class="countdown-container hours">
+                                            <span class="countdown-value">23</span>
+                                            <span class="countdown-heading">H's</span>
+                                        </div>
+                                        <div class="countdown-container minutes">
+                                            <span class="countdown-value">38</span>
+                                            <span class="countdown-heading">Min's</span>
+                                        </div>
+                                        <div class="countdown-container seconds">
+                                            <span class="countdown-value">27</span>
+                                            <span class="countdown-heading">Sec</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                                <a href="product-details.html"><span class="product-name">Nissan V16</span></a>
+                                <span class="latest-bid">Ultimo PUSH!</span>
+                                <div class="bid-react-area">
+                                    <div class="last-bid">1.600.000 CLP</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+     <div class="explore-area rn-section-gapTop">
+        <div class="container">
+            <div class="row mb--40">
+                <div class="col-12">
+                    <h3 class="title">Busca lo que deseas!</h3>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-3 order-2 order-lg-1">
+                    <div class="nu-course-sidebar">
+
+                        <!-- Start Widget Wrapper  -->
+                        <div class="nuron-expo-filter-widget widget-shortby">
+                            <div class="inner">
+                                <h5 class="widget-title">Sort By</h5>
+                                <div class="content">
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="short-check1">
+                                        <label for="short-check1">Newest</label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="short-check2">
+                                        <label for="short-check2">Oldest</label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="short-check3">
+                                        <label for="short-check3">Popular Courses</label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="short-check4">
+                                        <label for="short-check4">Featured On This Month</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Widget Wrapper  -->
+
+                        <!-- Start Widget Wrapper  -->
+                        <div class="nuron-expo-filter-widget widget-category mt--30">
+                            <div class="inner">
+                                <h5 class="widget-title">Categories</h5>
+                                <div class="content">
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="cat-check1">
+                                        <label for="cat-check1">Art &amp; Design <span>(24)</span></label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="cat-check2">
+                                        <label for="cat-check2">Web Development <span>(12)</span></label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="cat-check3">
+                                        <label for="cat-check3">Business Management <span>(8)</span></label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="cat-check4">
+                                        <label for="cat-check4">Digital Marketing <span>(3)</span></label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="cat-check5">
+                                        <label for="cat-check5">Music &amp; Fashion <span>(13)</span></label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="cat-check6">
+                                        <label for="cat-check6">Financial Management <span>(25)</span></label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="cat-check7">
+                                        <label for="cat-check7">Sports <span>(19)</span></label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Widget Wrapper  -->
+
+                        <!-- Start Widget Wrapper  -->
+                        <div class="nuron-expo-filter-widget widget-shortby mt--30">
+                            <div class="inner">
+                                <h5 class="widget-title">Level</h5>
+                                <div class="content">
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="level-check1">
+                                        <label for="level-check1">All Skill</label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="level-check2">
+                                        <label for="level-check2">Beginner</label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="level-check3">
+                                        <label for="level-check3">Intermediate</label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="level-check4">
+                                        <label for="level-check4">High</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Widget Wrapper  -->
+
+                        <!-- Start Widget Wrapper  -->
+                        <div class="nuron-expo-filter-widget widget-shortby mt--30">
+                            <div class="inner">
+                                <h5 class="widget-title">Price</h5>
+                                <div class="content">
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="price-check1">
+                                        <label for="price-check1">All Prices</label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="price-check2">
+                                        <label for="price-check2">Price: Low to High</label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="price-check3">
+                                        <label for="price-check3">Price: High to Low</label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="price-check4">
+                                        <label for="price-check4">Free Paid</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Widget Wrapper  -->
+
+                        <!-- Start Widget Wrapper  -->
+                        <div class="nuron-expo-filter-widget widget-shortby mt--30">
+                            <div class="inner">
+                                <h5 class="widget-title">Language</h5>
+                                <div class="content">
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="lang-check1">
+                                        <label for="lang-check1">All Language</label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="lang-check2">
+                                        <label for="lang-check2">Arabic</label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="lang-check3">
+                                        <label for="lang-check3">English</label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="lang-check4">
+                                        <label for="lang-check4">Russian</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Widget Wrapper  -->
+
+                        <!-- Start Widget Wrapper  -->
+                        <div class="nuron-expo-filter-widget widget-shortby mt--30">
+                            <div class="inner">
+                                <h5 class="widget-title">Short By Rating</h5>
+                                <div class="content">
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="rating-check1">
+                                        <label for="rating-check1">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="rating-check2">
+                                        <label for="rating-check2">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill off" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="rating-check3">
+                                        <label for="rating-check3">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill off" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill off" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </label>
+                                    </div>
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="rating-check4">
+                                        <label for="rating-check4">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill off" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill off" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill off" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </label>
+                                    </div>
+
+                                    <div class="nuron-form-check">
+                                        <input type="checkbox" id="rating-check5">
+                                        <label for="rating-check5">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill off" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill off" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill off" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-star-fill off" viewBox="0 0 16 16">
+                                                <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z" />
+                                            </svg>
+                                        </label>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Widget Wrapper  -->
+
+                        <!-- Start Widget Wrapper  -->
+                        <div class="nuron-expo-filter-widget widget-shortby mt--30">
+                            <div class="inner">
+                                <h5 class="widget-title">Filter By Price</h5>
+                                <div class="content">
+                                    <div class="price_filter s-filter clear">
+                                        <form action="#" method="GET">
+                                            <div id="slider-range" class="ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all">
+                                                <div class="ui-slider-range ui-widget-header ui-corner-all"></div><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span><span class="ui-slider-handle ui-state-default ui-corner-all" tabindex="0"></span>
+                                            </div>
+                                            <div class="slider__range--output">
+                                                <div class="price__output--wrap">
+                                                    <div class="price--output">
+                                                        <span>Price :</span><input type="text" id="amount" readonly="">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Widget Wrapper  -->
+
+                    </div>
+                </div>
+                <div class="col-lg-9 order-1 order-lg-2">
+                    <div class="row g-5">
+                        <!-- start single product -->
+                        <div class="col-lg-4 col-md-6 col-sm-12">
+                            <div class="product-style-one no-overlay with-placeBid">
+                                <div class="card-thumbnail">
+                                    <a href="product-details.html">
+                                        <img src="assets/images/portfolio/portfolio-01.jpg" alt="NFT_portfolio">
+                                    </a>
+                                    <a href="product-details.html" class="btn btn-primary">Place Bid</a>
+                                </div>
+                                <div class="product-share-wrapper">
+                                    <div class="profile-share">
+                                        <a href="author.html" class="avatar" data-tooltip="Owener:Mr.Jone-lee"><img src="assets/images/client/client-2.png" alt="Nft_Profile"></a>
+                                        <a href="author.html" class="avatar" data-tooltip="Owener:Mr.Jone-lee"><img src="assets/images/client/client-3.png" alt="Nft_Profile"></a>
+                                        <a href="author.html" class="avatar" data-tooltip="Owener:Mr.Jone-lee"><img src="assets/images/client/client-4.png" alt="Nft_Profile"></a>
+                                        <a class="more-author-text" href="#">9+ Place Bit.</a>
+                                    </div>
+                                    <div class="share-btn share-btn-activation dropdown">
+                                        <button class="icon" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <svg viewBox="0 0 14 4" fill="none" width="16" height="16" class="sc-bdnxRM sc-hKFxyN hOiKLt">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M3.5 2C3.5 2.82843 2.82843 3.5 2 3.5C1.17157 3.5 0.5 2.82843 0.5 2C0.5 1.17157 1.17157 0.5 2 0.5C2.82843 0.5 3.5 1.17157 3.5 2ZM8.5 2C8.5 2.82843 7.82843 3.5 7 3.5C6.17157 3.5 5.5 2.82843 5.5 2C5.5 1.17157 6.17157 0.5 7 0.5C7.82843 0.5 8.5 1.17157 8.5 2ZM11.999 3.5C12.8274 3.5 13.499 2.82843 13.499 2C13.499 1.17157 12.8274 0.5 11.999 0.5C11.1706 0.5 10.499 1.17157 10.499 2C10.499 2.82843 11.1706 3.5 11.999 3.5Z" fill="currentColor"></path>
+                                            </svg>
+                                        </button>
+
+                                        <div class="share-btn-setting dropdown-menu dropdown-menu-end">
+                                            <button type="button" class="btn-setting-text share-text" data-bs-toggle="modal" data-bs-target="#shareModal">
+                                                Share
+                                            </button>
+                                            <button type="button" class="btn-setting-text report-text" data-bs-toggle="modal" data-bs-target="#reportModal">
+                                                Report
+                                            </button>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <a href="product-details.html"><span class="product-name">Diamond Dog</span></a>
+                                <span class="latest-bid">Highest bid 1/20</span>
+                                <div class="bid-react-area">
+                                    <div class="last-bid">0.244wETH</div>
+                                    <div class="react-area">
+                                        <svg viewBox="0 0 17 16" fill="none" width="16" height="16" class="sc-bdnxRM sc-hKFxyN kBvkOu">
+                                            <path d="M8.2112 14L12.1056 9.69231L14.1853 7.39185C15.2497 6.21455 15.3683 4.46116 14.4723 3.15121V3.15121C13.3207 1.46757 10.9637 1.15351 9.41139 2.47685L8.2112 3.5L6.95566 2.42966C5.40738 1.10976 3.06841 1.3603 1.83482 2.97819V2.97819C0.777858 4.36443 0.885104 6.31329 2.08779 7.57518L8.2112 14Z" stroke="currentColor" stroke-width="2"></path>
+                                        </svg>
+                                        <span class="number">322</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end single product -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- explore section with left side filter End -->
+
+    <!-- JS ============================================ -->
+    <script src="assets/js/vendor/jquery.js"></script>
+    <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
+    <script src="assets/js/vendor/jquery-ui.js"></script>
+    <script src="assets/js/vendor/modernizer.min.js"></script>
+    <script src="assets/js/vendor/feather.min.js"></script>
+    <script src="assets/js/vendor/slick.min.js"></script>
+    <script src="assets/js/vendor/bootstrap.min.js"></script>
+    <script src="assets/js/vendor/sal.min.js"></script>
+    <script src="assets/js/vendor/particles.js"></script>
+    <script src="assets/js/vendor/jquery.style.swicher.js"></script>
+    <script src="assets/js/vendor/js.cookie.js"></script>
+    <script src="assets/js/vendor/count-down.js"></script>
+    <script src="assets/js/vendor/isotop.js"></script>
+    <script src="assets/js/vendor/imageloaded.js"></script>
+    <script src="assets/js/vendor/backtoTop.js"></script>
+    <script src="assets/js/vendor/odometer.js"></script>
+    <script src="assets/js/vendor/jquery-appear.js"></script>
+    <script src="assets/js/vendor/scrolltrigger.js"></script>
+    <script src="assets/js/vendor/jquery.custom-file-input.js"></script>
+    <script src="assets/js/vendor/savePopup.js"></script>
+    <script src="assets/js/vendor/vanilla.tilt.js"></script>
+
+    <!-- main JS -->
+    <script src="assets/js/main.js"></script>
+    <!-- Meta Mask  -->
+    <script src="assets/js/vendor/web3.min.js"></script>
+    <script src="assets/js/vendor/maralis.js"></script>
+    <script src="assets/js/vendor/nft.js"></script>
+
+</body>
+
+</html>
