@@ -22,6 +22,10 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
     <div class="container">
         <div class="row">
           <div class="col-md-12 d-flex justify-content-center">
@@ -39,7 +43,7 @@
             <li><a href="./Tecnologia.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">Tecnologia</a></li>
             <li><a href="./comofunca.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">¿Como funciona?</a></li>
             <li><a href="./vender.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">¿Quieres vender?</a></li>
-            <li><a href="./contacto.html" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">Contacto</a></li>
+            <li><a href="./contactox" class="nav-link px-2 link-dark" style="color: rgb(255, 255, 255);">Contacto</a></li>
           </ul>
   
           <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -60,6 +64,43 @@
           </div>
         </div>
       </div>
+
+      <!-- Inicio script web service-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+                $.get("https://mindicador.cl/api/uf/11-05-2022", 
+                    function(data){
+                        $.each(data.serie, function(i, item){
+                             $("#categorias").append("<tr><td>"+item.valor+"</td></tr>");
+                    });
+                });
+        });
+    </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                    $.get("https://mindicador.cl/api/dolar/12-05-2022", 
+                        function(data){
+                            $.each(data.serie, function(i, item){
+                                 $("#categorias2").append("<tr><td>"+item.valor+"</td></tr>");
+                        });
+                    });
+
+            });
+        </script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+
+                        $.get("https://mindicador.cl/api/utm/12-05-2022", 
+                            function(data){
+                                $.each(data.serie, function(i, item){
+                                     $("#categorias3").append("<tr><td>"+item.valor+"</td></tr>");
+                            });
+                        });
+
+               });
+            </script>
+
+    <!-- Fin script web service-->
 </head>
 
 <body>
@@ -114,6 +155,119 @@
           <span class="visually-hidden">Next</span>
         </button>
     </div>
+
+        <!-- start category area -->
+        <div class="category-area pt--70">
+            <div class="container">
+                <div class="row g-5">
+                    <!-- start single category -->
+                    <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6" data-sal-delay="200" data-sal="slide-up" data-sal-duration="800">
+                        <a class="category-style-one" href="#">
+                            <div class="row0">
+                                <h6>Valor UF</h6>
+                            </div>
+                            <div class="row0">
+                                <table class="table" id="categorias" style="color: rgb(0, 0, 0)">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+            
+            
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single category -->
+                    <!-- start single category -->
+                    <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6" data-sal-delay="300" data-sal="slide-up" data-sal-duration="800">
+                        <a class="category-style-one" href="#">
+                            <div class="row3">
+                                <h6>Valor Dolar</h6>
+                            </div>
+                            <div class="row3">
+                                <table class="table" id="categorias2" style="color: rgb(0, 0, 0)">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+            
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single category -->
+                    <!-- start single category -->
+                    <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6" data-sal-delay="400" data-sal="slide-up" data-sal-duration="800">
+                        <a class="category-style-one">
+                            <h6>Valor UTM</h6>
+                            <div class="row3">
+                                <table class="table" id="categorias3">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single category -->
+                    <!-- start single category -->
+                    <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6" data-sal-delay="500" data-sal="slide-up" data-sal-duration="800">
+                        <a class="category-style-one" href="#">
+                            <h6>Valor UTM</h6>
+                            <div class="row3">
+                                <table class="table" id="categorias3">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single category -->
+                    <!-- start single category -->
+                    <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6" data-sal-delay="600" data-sal="slide-up" data-sal-duration="800">
+                        <a class="category-style-one" href="#">
+                            <h6>Valor UTM</h6>
+                            <div class="row3">
+                                <table class="table" id="categorias3">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single category -->
+                    <!-- start single category -->
+                    <div class="col-lg-3 col-xl-2 col-md-4 col-sm-6" data-sal-delay="700" data-sal="slide-up" data-sal-duration="800">
+                        <a class="category-style-one" href="#">
+                            <h6>Valor UTM</h6>
+                            <div class="row3">
+                                <table class="table" id="categorias3">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col"></th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+                        </a>
+                    </div>
+                    <!-- end single category -->
+                </div>
+            </div>
+        </div>
+        <!-- end category area -->
+            
     
     <div class="rn-live-bidding-area rn-section-gapTop">
         <div class="container">
@@ -131,28 +285,28 @@
                         <div class="single-slide-product">
                             <div class="product-style-one">
                                 <div class="card-thumbnail">
-                                    <a href="#"><img src="./img/nissan.png" alt="..."></a>
-                                    <div class="countdown" data-date="2022-11-09">
+                                    <a href="./producto.html"><img src="./img/nissan.png" alt="..."></a>
+                                    <div class="countdown" data-date="2022-05-15">
                                         <div class="countdown-container days">
-                                            <span class="countdown-value">87</span>
-                                            <span class="countdown-heading">D's</span>
+                                            <span class="countdown-value">0</span>
+                                            <span class="countdown-heading">Dias</span>
                                         </div>
                                         <div class="countdown-container hours">
-                                            <span class="countdown-value">23</span>
+                                            <span class="countdown-value">0</span>
                                             <span class="countdown-heading">H's</span>
                                         </div>
                                         <div class="countdown-container minutes">
-                                            <span class="countdown-value">38</span>
+                                            <span class="countdown-value">0</span>
                                             <span class="countdown-heading">Min's</span>
                                         </div>
                                         <div class="countdown-container seconds">
-                                            <span class="countdown-value">27</span>
-                                            <span class="countdown-heading">Sec</span>
+                                            <span class="countdown-value">0</span>
+                                            <span class="countdown-heading">Seg</span>
                                         </div>
                                     </div>
                                 </div>
                                 <hr>
-                                <a href="product-details.html"><span class="product-name">Nissan V16</span></a>
+                                <a href="./producto.html"><span class="product-name">Nissan sV16</span></a>
                                 <span class="latest-bid">Ultimo PUSH!</span>
                                 <div class="bid-react-area">
                                     <div class="last-bid">1.600.000 CLP</div>
@@ -163,22 +317,22 @@
                             <div class="product-style-one">
                                 <div class="card-thumbnail">
                                     <a href="#"><img src="./img/celu.png" alt="..."></a>
-                                    <div class="countdown" data-date="2022-11-09">
+                                    <div class="countdown" data-date="2022-05-14">
                                         <div class="countdown-container days">
-                                            <span class="countdown-value">87</span>
-                                            <span class="countdown-heading">D's</span>
+                                            <span class="countdown-value">0</span>
+                                            <span class="countdown-heading">Dias</span>
                                         </div>
                                         <div class="countdown-container hours">
-                                            <span class="countdown-value">23</span>
+                                            <span class="countdown-value">0</span>
                                             <span class="countdown-heading">H's</span>
                                         </div>
                                         <div class="countdown-container minutes">
-                                            <span class="countdown-value">38</span>
+                                            <span class="countdown-value">0</span>
                                             <span class="countdown-heading">Min's</span>
                                         </div>
                                         <div class="countdown-container seconds">
-                                            <span class="countdown-value">27</span>
-                                            <span class="countdown-heading">Sec</span>
+                                            <span class="countdown-value">0</span>
+                                            <span class="countdown-heading">Seg</span>
                                         </div>
                                     </div>
                                 </div>
@@ -194,22 +348,22 @@
                             <div class="product-style-one">
                                 <div class="card-thumbnail">
                                     <a href="./producto.html"><img src="./img/libros1.png" alt="..."></a>
-                                    <div class="countdown" data-date="2022-11-09">
+                                    <div class="countdown" data-date="2022-05-17">
                                         <div class="countdown-container days">
-                                            <span class="countdown-value">87</span>
-                                            <span class="countdown-heading">D's</span>
+                                            <span class="countdown-value">0</span>
+                                            <span class="countdown-heading">Dias</span>
                                         </div>
                                         <div class="countdown-container hours">
-                                            <span class="countdown-value">23</span>
+                                            <span class="countdown-value">0</span>
                                             <span class="countdown-heading">H's</span>
                                         </div>
                                         <div class="countdown-container minutes">
-                                            <span class="countdown-value">38</span>
+                                            <span class="countdown-value">0</span>
                                             <span class="countdown-heading">Min's</span>
                                         </div>
                                         <div class="countdown-container seconds">
-                                            <span class="countdown-value">27</span>
-                                            <span class="countdown-heading">Sec</span>
+                                            <span class="countdown-value">0</span>
+                                            <span class="countdown-heading">Seg</span>
                                         </div>
                                     </div>
                                 </div>
@@ -225,22 +379,22 @@
                             <div class="product-style-one">
                                 <div class="card-thumbnail">
                                     <a href="./producto.html"><img src="./img/libros2.png" alt="..."></a>
-                                    <div class="countdown" data-date="2022-11-09">
+                                    <div class="countdown" data-date="2022-05-16">
                                         <div class="countdown-container days">
-                                            <span class="countdown-value">87</span>
-                                            <span class="countdown-heading">D's</span>
+                                            <span class="countdown-value">0</span>
+                                            <span class="countdown-heading">Dias</span>
                                         </div>
                                         <div class="countdown-container hours">
-                                            <span class="countdown-value">23</span>
+                                            <span class="countdown-value">0</span>
                                             <span class="countdown-heading">H's</span>
                                         </div>
                                         <div class="countdown-container minutes">
-                                            <span class="countdown-value">38</span>
+                                            <span class="countdown-value">0</span>
                                             <span class="countdown-heading">Min's</span>
                                         </div>
                                         <div class="countdown-container seconds">
-                                            <span class="countdown-value">27</span>
-                                            <span class="countdown-heading">Sec</span>
+                                            <span class="countdown-value">0</span>
+                                            <span class="countdown-heading">Seg</span>
                                         </div>
                                     </div>
                                 </div>
@@ -256,22 +410,22 @@
                             <div class="product-style-one">
                                 <div class="card-thumbnail">
                                     <a href="#"><img src="./img/mac.png" alt="..."></a>
-                                    <div class="countdown" data-date="2022-11-09">
+                                    <div class="countdown" data-date="2022-05-15">
                                         <div class="countdown-container days">
-                                            <span class="countdown-value">87</span>
-                                            <span class="countdown-heading">D's</span>
+                                            <span class="countdown-value">0</span>
+                                            <span class="countdown-heading">Dias</span>
                                         </div>
                                         <div class="countdown-container hours">
-                                            <span class="countdown-value">23</span>
+                                            <span class="countdown-value">0</span>
                                             <span class="countdown-heading">H's</span>
                                         </div>
                                         <div class="countdown-container minutes">
-                                            <span class="countdown-value">38</span>
+                                            <span class="countdown-value">0</span>
                                             <span class="countdown-heading">Min's</span>
                                         </div>
                                         <div class="countdown-container seconds">
-                                            <span class="countdown-value">27</span>
-                                            <span class="countdown-heading">Sec</span>
+                                            <span class="countdown-value">0</span>
+                                            <span class="countdown-heading">Seg</span>
                                         </div>
                                     </div>
                                 </div>
@@ -774,6 +928,7 @@
         </div>
     </div>
 
+
     <script src="assets/js/vendor/jquery.js"></script>
     <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
     <script src="assets/js/vendor/jquery-ui.js"></script>
@@ -796,12 +951,13 @@
     <script src="assets/js/vendor/savePopup.js"></script>
     <script src="assets/js/vendor/vanilla.tilt.js"></script>
 
-    <!-- main JS -->
     <script src="assets/js/main.js"></script>
-    <!-- Meta Mask  -->
+
     <script src="assets/js/vendor/web3.min.js"></script>
     <script src="assets/js/vendor/maralis.js"></script>
     <script src="assets/js/vendor/nft.js"></script>
+
+    
 
 </body>
 
