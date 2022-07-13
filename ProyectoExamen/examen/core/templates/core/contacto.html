@@ -1,0 +1,45 @@
+{% extends 'core/base.html' %}
+
+
+{% block container %}
+
+
+
+<div id="contenido-form">
+
+    <form action="" id="formulario_contacto">
+        <h5>Contactanos</h5>
+        <br>
+
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre">
+        <br>
+        <label for="email">Correo</label>
+        <input type="email" name="email" id="email">
+        <br>
+        <label for="tipo_solicitud">Tipo solicitud</label>
+        <select name="tipo_solicitud" id="tipo_solicitud">
+            <option value="">Seleccionar</option>
+            <option value="sugerencia">Sugerencia</option>
+            <option value="reclamo">Reclamo</option>
+            <option value="consulta">Consulta</option>
+
+        </select>
+        <br>
+        <label for="mensaje">Mensaje</label>
+        <br> 
+        <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
+        <br>
+        <input type="checkbox" name="avisos" id="avisos">
+        <label for="avisos">¿Desea recibir sugerencias/avisos?</label>
+        <br>
+        <input type="reset" value="limpiar">
+        <button type="button" id="guardar">Guardar</button>
+
+
+
+
+    </form>
+</div>
+
+{% endblock container %}

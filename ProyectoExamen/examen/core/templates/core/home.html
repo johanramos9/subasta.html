@@ -1,0 +1,34 @@
+{% extends 'core/base.html' %}
+
+
+{% block container %}
+{% load humanize %}
+
+<div class="productos">
+
+<h5>Productos</h5>
+<br>
+    {% for p in productos %}
+    <div class="producto">
+
+        <div class="contenedor_producto">
+            {% if p.imagen %}
+            <img src="{{ p.imagen.url }}" alt="imagen producto" href="#">
+            {% endif %}
+            <div class="detalle">
+                <h5>{{ p.marca | capfirst }}</h5>
+                <h2>{{ p.nombre | title }}</h2>
+                <h3>${{ p.precio | intcomma }}</h3>
+
+                <a href="{% url 'modificar_producto' p.id %}">Modificar</a>
+
+
+            </div>
+        </div>
+    </div>
+
+    {% endfor %}
+
+</div>
+
+{% endblock container %}

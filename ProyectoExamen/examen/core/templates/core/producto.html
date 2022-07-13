@@ -1,0 +1,33 @@
+{% extends 'core/base.html' %}
+
+
+{% block container %}
+{% load humanize %}
+
+<div class="productos">
+
+<h5>Producto</h5>
+<br>
+
+    <div class="producto">
+
+        <div class="contenedor_producto">
+            {% if p.imagen %}
+            <img src="{{ p.imagen.url }}" alt="imagen producto">
+            {% endif %}
+            <div class="detalle">
+                <h5>{{ p.marca | capfirst }}</h5>
+                <h2>{{ p.nombre | title }}</h2>
+                <h3>${{ p.precio | intcomma }}</h3>
+
+                <a href="{% url 'producto' p.id %}">Visualizar</a>
+
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+{% endblock container %}
